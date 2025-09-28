@@ -201,7 +201,7 @@
         @media (max-width: 400px) {
             .invitation-card {
                 padding: 15px 25px;
-                margin: 15px;
+                margin: 15px; /* ✅ Proper margin for mobile */
             }
             .heading {
                 font-size: 1.3em;
@@ -239,15 +239,7 @@
         <span class="sparkle s1">&#x2736;</span>
         <span class="sparkle s2">&#x2736;</span>
 
-        <!-- ✅ Rajneesh and Software Engineer in one line -->
-        <div>
-            <h1 class="main-names" style="display:inline;">Rajneesh
-
-<h6 class="parent-info" style="display:inline; margin-left:10px;">(Software Engineer)</h6>
-</h1>
-            
-        </div>
-
+        <h1 class="main-names">Rajneesh <h6>(Software Engineer) <h6/></h1> 
         <p class="parents-info">S/o: Mr. Ram Kumar Gupta </p>
 
         <div class="divider">&amp;</div>
@@ -265,11 +257,11 @@
         </div>
 
         <div class="time-venue">
-            Date: 05/10/2025 || 11:00 AM onwards <br />
-            Venue: Avyansh Mundpam, Kotwari Mod, Rasra, <br />
-            Dist- Ballia (U. P.) 277001 <br />
+            Date: 05/10/2025 || 11:00 AM onwards <br/>
+            Venue: Avyansh Mundpam, Kotwari Mod, Rasra, <br/>
+            Dist- Ballia (U. P.) 277001 <br/>
             +91-9807187202 | +91-6391350698
-            <br />
+            <br/>
             <a href="https://www.google.com/maps?q=Avyansh+Mundpam,+Kotwari+Mod,+Rasra,+Ballia+Uttar+Pradesh" target="_blank" style="display:inline-block; margin-top:8px; font-size:0.95em; color:var(--main-text-color); text-decoration:underline;">
                 Open the map
             </a>
@@ -280,6 +272,11 @@
             Shri Ram Kumar Gupta | Shri Sanjay Kumar Gupta<br />
             Smt. Geeta Devi | Smt. Anuradha Devi
         </div>
+
+        <!--p style="margin-top: 15px; font-size: 0.7em;">
+           <H2>Sahu Family</H2>
+        
+    </p-->
 
         <span class="feather left">&#x1F986;</span>
         <span class="feather right">&#x1F986;</span>
