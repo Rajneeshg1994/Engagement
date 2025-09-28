@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&family=Marcellus&display=swap" rel="stylesheet" />
     <style>
         :root {
-            /* Color Palette */
             --bg-color: #f7f7ff;
             --main-text-color: #4c2c69;
             --secondary-text-color: #6a6a6a;
@@ -156,13 +155,11 @@
             color: var(--main-text-color);
             margin-top: 5px;
             line-height: 1.4;
-white-space: nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
-
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
-        /* Feather styling - emojis */
         .feather {
             position: absolute;
             font-size: 2em;
@@ -183,7 +180,6 @@ text-overflow: ellipsis;
             transform: rotate(15deg) scaleX(-1);
         }
 
-        /* Sparkle effect */
         .sparkle {
             position: absolute;
             font-size: 1.5em;
@@ -201,10 +197,11 @@ text-overflow: ellipsis;
             left: 40px;
         }
 
-        /* Responsive */
+        /* ✅ Mobile View Styling */
         @media (max-width: 400px) {
             .invitation-card {
                 padding: 15px 25px;
+                margin: 15px; /* ✅ Proper margin for mobile */
             }
             .heading {
                 font-size: 1.3em;
@@ -230,7 +227,6 @@ text-overflow: ellipsis;
         <div class="heading">&#x1F48D; Engagement Ceremony Invitation</div>
 
         <div class="couple-photo-container">
-            <!-- Updated image here: Replace src with transparent BG image if available -->
             <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfqHmMQw6rWqtwvrmfnYo8FnTXglMSbiFpLA&s"
                 alt="Engagement Ring Platter"
@@ -265,11 +261,10 @@ text-overflow: ellipsis;
             Venue: Avyansh Mundpam, Kotwari Mod, Rasra, <br />
             Dist- Ballia (U. P.) 277001 <br />
             +91-9807187202 | +91-6391350698
-
-<br />
-<a href="https://www.google.com/maps?q=Avyansh+Mundpam,+Kotwari+Mod,+Rasra,+Ballia+Uttar+Pradesh" target="_blank" style="display:inline-block; margin-top:8px; font-size:0.95em; color:var(--main-text-color); text-decoration:underline;">
-     Open the map
-</a>
+            <br />
+            <a href="https://www.google.com/maps?q=Avyansh+Mundpam,+Kotwari+Mod,+Rasra,+Ballia+Uttar+Pradesh" target="_blank" style="display:inline-block; margin-top:8px; font-size:0.95em; color:var(--main-text-color); text-decoration:underline;">
+                Open the map
+            </a>
         </div>
 
         <div class="invited-by">Invited by</div>
@@ -279,8 +274,6 @@ text-overflow: ellipsis;
         </div>
 
         <p style="margin-top: 15px; font-size: 0.7em;">Sahu Family</p>
-
-        <!-- Rings sliding animation removed as per your request -->
 
         <span class="feather left">&#x1F986;</span>
         <span class="feather right">&#x1F986;</span>
