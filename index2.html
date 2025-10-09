@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajneesh & Pooja Wedding Invitation</title>
+    <!-- Bootstrap and Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Shadows+Into+Light&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Body Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f6e3ff; /* Light pinkish background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Wedding Banner */
+        .wedding-banner {
+            background-color: #ff6f61;
+            color: #fff;
+            text-align: center;
+            font-family: 'Sacramento', cursive;
+            font-size: 50px;
+            padding: 20px;
+            letter-spacing: 5px;
+            margin-top: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        /* Ganesh Images Styling */
+        .ganesh-image {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff6f61;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .ganesh-left {
+            left: 10%;
+        }
+
+        .ganesh-right {
+            right: 10%;
+        }
+
+        /* Card Container */
+        .card-container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Card with background image */
+        .card-background {
+            background-image: url('https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg'); /* Couple's image as background */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .card-background::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay for text visibility */
+            border-radius: 15px;
+        }
+
+        .card-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Couple Images */
+        .couple-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .couple-images img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff6f61;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Heading */
+        .main-heading {
+            font-family: 'Sacramento', cursive;
+            font-size: 36px;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        /* Subheading */
+        .subheading {
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #7b4f9a;
+        }
+
+        /* Wedding Details */
+        .wedding-details p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #fff;
+            margin: 10px 0;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+        }
+
+        .wedding-details strong {
+            color: #ff6f61;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #ff6f61;
+        }
+
+        .contact-info a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Quote Section */
+        .quote {
+            font-style: italic;
+            font-size: 20px;
+            color: #ff6f61;
+            margin-top: 30px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 18px;
+            color: #ff6f61;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .card-container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .main-heading {
+                font-size: 30px;
+            }
+
+            .subheading {
+                font-size: 20px;
+            }
+
+            .couple-images img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .wedding-details p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .wedding-banner {
+                font-size: 30px;
+            }
+
+            .couple-images img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .card-container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            .main-heading {
+                font-size: 26px;
+            }
+
+            .subheading {
+                font-size: 18px;
+            }
+
+            .wedding-details p {
+                font-size: 14px;
+            }
+
+            .quote {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Wedding Banner with Ganesh Images -->
+    <div class="wedding-banner">
+        <!-- Ganesh Images on Left and Right -->
+        <img src="https://lh3.googleusercontent.com/proxy/tv40k2w7hDj5kChZapBakPDh0e5rzGu7WjF0ZO7deyD9pqBzMMMHkeicpIJPoRSmyJwEN-baFztKcfydAMPTyrLMoezRR-vaWiFKjqSF8itl85zoJ7KsjhudlQ" alt="Ganesh Left" class="ganesh-image ganesh-left">
+        <div>Rajneesh Weds Pooja</div>
+        <img src="https://lh3.googleusercontent.com/proxy/tv40k2w7hDj5kChZapBakPDh0e5rzGu7WjF0ZO7deyD9pqBzMMMHkeicpIJPoRSmyJwEN-baFztKcfydAMPTyrLMoezRR-vaWiFKjqSF8itl85zoJ7KsjhudlQ" alt="Ganesh Right" class="ganesh-image ganesh-right">
+    </div>
+
+    <!-- Wedding Invitation Card with Couple's Image as Background -->
+    <div class="card-container">
+        <div class="card-background">
+            <div class="card-content">
+                <!-- Couple's Images -->
+                <div class="couple-images">
+                    <img src="https://via.placeholder.com/150" alt="Rajneesh">
+                    <img src="https://via.placeholder.com/150" alt="Pooja">
+                </div>
+
+                <!-- Main Heading -->
+                <div class="main-heading">
+                    A Beautiful Union
+                </div>
+
+                <!-- Subheading -->
+                <div class="subheading">
+                    Join us as Rajneesh Weds Pooja
+                </div>
+
+                <!-- Wedding Details -->
+                <div class="wedding-details">
+                    <p><strong>Rajneesh</strong> (Software Engineer) s/o Shri Ram Kumar Gupta & Smt. Geeta Devi</p>
+                    <p><strong>Weds</strong></p>
+                    <p><strong>Pooja</strong> (D/O Shri Govind Gupta & Smt. Rajkumari Devi)</p>
+                    <p><strong>Date:</strong> 19-February-2026, Thursday</p>
+                    <p><strong>Baarat Route:</strong> Dalpatti, Bhrigu Ashram to Mannat Garden Kadam Chauraha, Ballia</p>
+                </div>
+
+                <!-- Invited By -->
+                <div class="wedding-details">
+                    <p><strong>Invited By:</strong><br>
+                    Shri Ram Kumar Gupta & Smt. Geeta Devi<br>
+                    Shri Sanjay Kumar Gupta & Smt. Anuradha Devi</p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <p>Contact No: <a href="tel:+919807187202">9807187202</a> | <a href="tel:+916391350698">6391350698</a></p>
+                </div>
+
+                <!-- Quote -->
+                <div class="quote">
+                    "Mele Bale Mama Ki chhadi me aap Chhabko Julul chhe julul aan hai" - Advik Gupta (Duggu)
+                </div>
+
+                <!-- Footer -->
+                <div class="footer">
+                    We Look Forward to Your Presence!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
