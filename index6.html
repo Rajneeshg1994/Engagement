@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🌸 विवाह निमंत्रण पत्र 🌸</title>
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <style>
+    body {
+      background-image: url('https://images.pexels.com/photos/842682/pexels-photo-842682.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Mukta', sans-serif;
+      color: #2e2e2e;
+    }
+
+    .invitation {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 15px;
+      margin: 50px auto;
+      max-width: 800px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h2,
+    h3,
+    h4 {
+      color: #b30059;
+    }
+
+    .emoji {
+      font-size: 1.4em;
+    }
+
+    hr {
+      border-top: 2px dashed #b30059;
+    }
+
+    .contact span {
+      display: block;
+      font-weight: bold;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    /* गणेश फोटो के लिए */
+    .ganesh-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .ganesh-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #b30059;
+    }
+
+    /* श्री रजनीश और कुमारी पूजा फोटो के लिए */
+    .profile-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .profile-section.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #b30059;
+    }
+
+    /* ✅ Responsive सुधार */
+    @media (max-width: 768px) {
+      .invitation {
+        padding: 20px;
+        margin: 20px 10px;
+      }
+
+      .ganesh-img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .profile-img {
+        width: 100px;
+        height: 100px;
+      }
+
+      h2, h3, h4 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .profile-section,
+      .profile-section.reverse {
+        flex-direction: column !important;
+        text-align: center;
+      }
+
+      .ganesh-section {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container invitation text-center">
+    <h2>🌸 <strong>विवाह निमंत्रण पत्र</strong> 🌸</h2>
+
+    <p class="emoji"></p>
+
+    <!-- गणेश जी फोटो दोनों तरफ -->
+    <div class="ganesh-section">
+      <img
+        src="https://media.istockphoto.com/id/1307831372/photo/browse-high-resolution-stock-images-of-lord-ganesha.jpg?s=612x612&w=0&k=20&c=ofTjQdTxrp1IR4GI3GFWshS7-mKxrjAZVIDbH9Ts7bI="
+        alt="Ganesh Ji Left"
+        class="ganesh-img"
+      />
+      <div>
+        <h4><strong>ॐ श्री गणेशाय नमः</strong></h4>
+        <p>
+          "मंगलं भगवान विष्णुः, मंगलं गरुडध्वजः।<br />
+          मंगलं पुण्डरीकाक्षं, मंगलायतनो हरिः॥"
+        </p>
+      </div>
+      <img
+        src="https://media.istockphoto.com/id/1307831372/photo/browse-high-resolution-stock-images-of-lord-ganesha.jpg?s=612x612&w=0&k=20&c=ofTjQdTxrp1IR4GI3GFWshS7-mKxrjAZVIDbH9Ts7bI="
+        alt="Ganesh Ji Right"
+        class="ganesh-img"
+      />
+    </div>
+
+    <hr />
+
+    <h3>🙏 <strong>सादर आमंत्रण</strong> 🙏</h3>
+    <p>शुभाशीष प्राप्त कर हम आपको यह बताते हुए हर्षित हैं कि हमारे सुपुत्र</p>
+
+    <!-- श्री रजनीश के बाईं तरफ फोटो -->
+    <div class="profile-section reverse">
+      <img
+        src="https://via.placeholder.com/120" 
+        alt="श्री रजनीश"
+        class="profile-img"
+      />
+      <div>
+        <h3>💍 <strong>श्री रजनीश</strong></h3>
+        <p>
+          (सॉफ्टवेयर इंजीनियर)<br />
+          पुत्र श्री राम कुमार गुप्ता एवं श्रीमती गीता देवी
+        </p>
+      </div>
+    </div>
+
+    <p>का पावन विवाह</p>
+
+    <!-- कुमारी पूजा के दाईं तरफ फोटो -->
+    <div class="profile-section">
+      <img
+        src="https://via.placeholder.com/120"
+        alt="कुमारी पूजा"
+        class="profile-img"
+      />
+      <div>
+        <h3>💐 <strong>कुमारी पूजा</strong></h3>
+        <p>पुत्री श्री गोविंद गुप्ता एवं श्रीमती राजकुमारी देवी</p>
+      </div>
+    </div>
+
+    <p>के साथ</p>
+
+    <p>
+      📅 <strong>दिनांक – 19 फरवरी 2026 | दिन – बृहस्पतिवार</strong><br />
+    </p>
+
+    <hr />
+
+    <h4>🚩 <strong>बारात कार्यक्रम</strong></h4>
+    <p>
+      बारात हमारे निवास स्थान से शाम 6 बजे से चलकर<br />
+      <strong>“मन्नत गार्डन, कदम चौराहा”</strong> प्रस्थान करेगी।
+    </p>
+
+    <hr />
+
+    <h4>‍♂️ "मेले बले मामा की छादी में दुलूल छे, दुलूल आना..." -आद्विक गुप्ता (डुग्गू)</h4>
+    <p> मेरे द्वार दिये गये निमंत्रण को स्वीकार करके आप पधारिये और नवदम्पती को अपने आशीर्वाद से कृतार्थ करें।</p>
+
+    <hr />
+
+    <h4>🌿 <strong>दर्शनाभिलाषी:</strong></h4>
+    <p>
+      रोहित गुप्ता (प्रोजेक्ट मैनेजर, मैकेनिकल इंजीनियर)<br />
+      शुभम गुप्ता, सागर गुप्ता, अनुराग गुप्ता<br />
+      मनोज, सुनील, अनिल, पप्पू, विनोद, सूरज, राजा
+    </p>
+
+    <hr />
+
+    <h4>💐 <strong>स्वागताकांक्षी:</strong></h4>
+    <p>
+      श्री आशीष कुमार गुप्ता एवं श्रीमती प्रियंका गुप्ता<br />
+      श्री मस्तराम गुप्ता एवं श्रीमती जाशो देवी<br />
+      श्री संजय कुमार गुप्ता एवं श्रीमती अनुराधा देवी<br />
+      श्री विनोद कुमार गुप्ता (पूर्व प्रधान) एवं श्रीमती ______ देवी<br />
+      श्री सुमंत कुमार गुप्ता एवं श्रीमती बबिता गुप्ता
+    </p>
+
+    <hr />
+
+    <h4>🙇‍♂️ <strong>विनीत:</strong></h4>
+    <p>
+      श्री राम कुमार गुप्ता एवं श्रीमती गीता देवी<br />
+      🏠 पता: दालपट्टी, भृगु आश्रम, बलिया (उत्तर प्रदेश) – 277001
+    </p>
+
+    <div class="contact">
+      <span>📞 संपर्क सूत्र:</span>
+      <p>📱 9807187202 | 📱 6391350698</p>
+    </div>
+
+    <hr />
+
+    <h4>🌺 <strong>शुभकामना मंत्र</strong> 🌺</h4>
+    <p>
+      "सर्वे भवन्तु सुखिनः, सर्वे सन्तु निरामयाः।<br />
+      सर्वे भद्राणि पश्यन्तु, मा कश्चिद् दुःखभाग् भवेत्॥"
+    </p>
+
+    <h5> आपकी उपस्थिति हमारे लिए सौभाग्य का विषय होगी।</h5>
+    <p>🙏 कृपया समय पर पधारें एवं आशीर्वाद प्रदान करें। 🙏</p>
+  </div>
+</body>
+</html>
