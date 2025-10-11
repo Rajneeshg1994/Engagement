@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Invitation - Rajneesh & Pooja</title>
+
+  <!-- Bootstrap CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- React & ReactDOM CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <style>
+    body {
+      background-color: #f9f5f0;
+      font-family: 'Georgia', serif;
+    }
+    .invitation-card {
+      background: #fffaf0;
+      border: 2px solid #e6c200;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      margin-top: 40px;
+      color: #4b2e05;
+    }
+    h2, h4 {
+      font-weight: bold;
+    }
+    .divider {
+      border-top: 2px dashed #d4af37;
+      margin: 20px 0;
+    }
+    blockquote {
+      font-style: italic;
+      color: #b34d00;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const invitationData = {
+      groom: {
+        name: "Rajneesh",
+        profession: "Software Engineer",
+        parents: "S/O Shri Ram Kumar Gupta & Smt. Geeta Devi"
+      },
+      bride: {
+        name: "Pooja",
+        parents: "D/O Shri Govind Gupta & Smt. Rajkumari Devi"
+      },
+      event: {
+        date: "19 February 2026, Thursday",
+        venue: "Dalpatti Bhrigu Ashram Ballia to Mannat Garden, Kadam Chauraha, Ballia",
+        message: "मेले बले मामा की छादी में दुलूल छे दुलूल आना - Advik Gupta (Duggu)"
+      },
+      host: {
+        name: "Shri Ram Kumar Gupta & Smt. Geeta Devi",
+        address: "Dalpatti, Bhrigu Ashram, Ballia (U. P.) - 277001"
+      },
+      contacts: ["9807187202", "6391350698"],
+      welcomers: [
+        "Shri Ashish Gupta & Smt. Priyanka Gupta",
+        "Shri Mast Ram Gupta & Smt. Jasho Devi",
+        "Shri Sanjay Kumar Gupta & Anuradha Gupta",
+        "Shri Vinod Kumar Gupta & Smt. _________ Devi",
+        "Shri Sumant Gupta & Smt. Babita Devi",
+        "Shri Anup Gupta & Smt. Priyanka Devi"
+      ],
+      friends: [
+        "Rohit Gupta (Project Manager as Mechanical Engineer)",
+        "Shubham Gupta", "Sagar Gupta", "Anurag Gupta",
+        "Manoj", "Sunil", "Pappu", "Vinod", "Anil", "Suraj"
+      ]
+    };
+
+    function InvitationCard({ data }) {
+      const { groom, bride, event, host, contacts, welcomers, friends } = data;
+
+      return (
+        <div className="invitation-card shadow">
+          <h2 className="text-center mb-3">Wedding Invitation</h2>
+
+          <p className="text-center">
+            <strong>{groom.name}</strong> ({groom.profession})<br/>
+            {groom.parents}
+          </p>
+
+          <h4 className="text-center text-danger">Weds</h4>
+
+          <p className="text-center">
+            <strong>{bride.name}</strong><br/>
+            {bride.parents}
+          </p>
+
+          <div className="divider"></div>
+
+          <p className="text-center fw-bold">Date: {event.date}</p>
+          <p className="text-center">Venue: {event.venue}</p>
+
+          <blockquote className="text-center mt-3">“{event.message}”</blockquote>
+
+          <div className="divider"></div>
+
+          <h5>DarshanAbhilashi:</h5>
+          <ul>
+            {friends.map((f, i) => <li key={i}>{f}</li>)}
+          </ul>
+
+          <h5 className="mt-3">Swagatakanshi:</h5>
+          <ul>
+            {welcomers.map((w, i) => <li key={i}>{w}</li>)}
+          </ul>
+
+          <h5 className="mt-3">Vinit:</h5>
+          <p>{host.name}</p>
+          <p>Address: {host.address}</p>
+
+          <h5>Contact No.:</h5>
+          <ul>
+            {contacts.map((c, i) => <li key={i}>📞 {c}</li>)}
+          </ul>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<InvitationCard data={invitationData} />);
+  </script>
+</body>
+</html>
